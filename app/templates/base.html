@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Creators I Like</title>
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+    {% block page_title %}{% endblock page_title %} {% block page_info %}
+    {%endblock page_info %}
+  </body>
+</html>

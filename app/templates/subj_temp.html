@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block page_title %}
+<h1 class="header">{{ title }} I Like</h1>
+{% endblock page_title %} {% block page_info%}
+<p class="basic_info">{{ info }}</p>
+<div class="full">
+  <ul>
+    {% for spec in specs %}
+    <li>{{ spec }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock page_info%}
